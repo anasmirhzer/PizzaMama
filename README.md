@@ -1,0 +1,2 @@
+# PizzaMama
+Django project
