@@ -9,5 +9,5 @@ def index(request):
     # pizzas_infos = [pizza.name +" : " + str(pizza.price) + "$" for pizza in pizzas]
     # pizzas_infos_str = ", ".join(pizzas_infos)
     # return HttpResponse(f"Pizzas : {pizzas_infos_str}")
-    pizzas = Pizza.objects.all()
+    pizzas = Pizza.objects.all().order_by('price')
     return render(request, 'menu/index.html', {'pizzas': pizzas})
