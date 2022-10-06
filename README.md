@@ -1,7 +1,7 @@
 # PizzaMama
 Django commands
 
-- Install Django : Pip install Django 
+- Install Django : Pip install django 
 - Create new project : django-admin startproject <projectName>
 
 - Start web server  : 
@@ -24,19 +24,17 @@ Django commands
 
 - Add application to admin interface :
 
-		< Code > 
 			from .models import <ClassModel>
 			admin.site.register(<ClassModel>)
-		</Code>	
+
 
 - Pseudo python code in html page :
 
-		<Code> 
 			<ul>
  			   {% for pizza in pizzas %}
  				   <li>{{ pizza.name }}</li>
    			   {% endfor %}
 			</ul>
-		</Code>
+
 
 	
