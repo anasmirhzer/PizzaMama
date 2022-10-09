@@ -30,11 +30,13 @@ Django commands
 
 - Pseudo python code in html page :
 
-			<ul>
- 			   {% for pizza in pizzas %}
- 				   <li>{{ pizza.name }}</li>
-   			   {% endfor %}
-			</ul>
+            <ul>
+                {% for pizza in pizzas %}
+                    <li>{{ pizza.name }}</li>
+                  {% endfor %}
+            </ul>
 
-
+- Changes to do at every production deployment :
+  1. python manage.py migrate (If changes on db structure)
+  2. python manage.py loadstatic (to update images and css)
 	
